@@ -7,12 +7,14 @@
             <h1><a href="/">Abnish's Blog</h1>
           </div>
 
-          {% for posts in posts %}
-            <p>published: {{ post.published_date }}</p>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>Gram Panchayat Development Plan and its component</p>
-            <p>{{ post.text|linebreaksbr }}
-          </div>
+          {% for post in posts %}
+            <div>
+              <p>published: {{ post.published_date }}</p>
+              <h2><a href="">{{ post.title }}</a></h2>
+              <p>Gram Panchayat Development Plan and its component</p>
+              <p>{{ post.text|linebreaksbr }}
+            </div>
+          {% endfor %}
 
           <div>
             <p>published: 16.10.2014, 6:14 a.m</p>
