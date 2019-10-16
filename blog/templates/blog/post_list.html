@@ -6,9 +6,12 @@
           <div>
             <h1><a href="/">Abnish's Blog</h1>
           </div>
-            <p>published: 16.10.2019, 5:14 a.m</p>
-            <h2><a href="">My first post</a></h2>
+
+          {% for posts in posts %}
+            <p>published: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>Gram Panchayat Development Plan and its component</p>
+            <p>{{ post.text|linebreaksbr }}
           </div>
 
           <div>
